@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Twitter Headline Unhider
+@description    Make link card headlines visible on Twitter web
+@namespace      https://github.com/lunasorcery
+@version        1.0.0
+@author         lunasorcery
+@license        MIT
+==/UserStyle== */
+
+
+@-moz-document domain("twitter.com") {
+
+    /* show the headline */
+    div[data-testid="card.layoutLarge.media"] a[aria-label]:after {
+        content: attr(aria-label);
+        padding: 12px;
+        font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 1.2em;
+        z-index: 0;
+        
+        /* light mode as default */
+        background: #fff;
+        color: rgb(15, 20, 25);
+    }
+
+    /* dark mode  */
+    div.r-18bvks7[data-testid="card.wrapper"] div[data-testid="card.layoutLarge.media"] a[aria-label]:after {
+        background: rgb(21, 32, 43);
+        color: rgb(247, 249, 249);
+    }
+
+    /* lights out */
+    div.r-1kqtdi0[data-testid="card.wrapper"] div[data-testid="card.layoutLarge.media"] a[aria-label]:after {
+        background: #000;
+        color: rgb(247, 249, 249);
+    }
+}
