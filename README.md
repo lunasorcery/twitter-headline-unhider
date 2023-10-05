@@ -5,10 +5,10 @@ A set of custom CSS rules to make link-card headlines visible again on Twitter's
 ## Demo
 
 **Before:**
-![](docs/before.png)
+<img src="docs/before.png" width="600px" alt="Screenshot of a tweet with a link card; the headline is not visible" />
 
 **After:**
-![](docs/after.png)
+<img src="docs/after.png" width="600px" alt="Screenshot of a tweet with a link card; the headline is now visible below the hero image" />
 
 ## Installation
 
